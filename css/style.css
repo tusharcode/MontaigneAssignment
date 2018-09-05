@@ -1,0 +1,100 @@
+body {
+	background-color: #232322;
+}
+
+.chart {
+	width: 100%; 
+  	min-height: 450px;
+}
+
+/*svg g:nth-child(2) {
+	fill: black;
+}*/
+
+g rect {
+	fill: #363636;
+}
+
+.navbar-primary {
+	background-color: #045b7f;
+	border-radius: 0px;
+}
+
+.navbar-brand {
+	color: white;
+	font-weight: bold;
+	border-right: 1px solid black;
+}
+
+.ranksHeading {
+	background-color: #1d1d1d;
+	color: white;
+	padding-left: 5px;
+	border-radius: 5px;
+}
+h5 {
+	font-weight: bold;
+}
+
+.custom-table-td {
+	border-color: black;
+}
+
+
+.dataTables_wrapper {
+	color: white;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+     background-color: #363636;
+}
+
+table.dataTable thead>tr>th.sorting_asc{
+    width: 740px !important;
+    padding: 5px;
+}
+
+table.dataTable thead>tr>th.sorting{
+    width: 180px !important;
+    padding: 5px;
+}
+
+table>tbody>tr>td {
+    text-align: center;
+}
+
+table>tbody>tr>td.sorting_1 {
+    text-align: left;
+}
+
+table>tbody>tr>td {
+	border :0px;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+	background-color: #464646;
+	border :0px;
+	color: white;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+	background-color: #464646;
+	border :0px;
+	color: white;
+}
+
+.pagination>li>a, .pagination>li>span {
+	background-color: #464646;
+	color: white;
+	border-color: #464646;
+}
+
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+	background-color: #464646;
+	color: white;
+	border-color: #464646;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+	background-color: black;
+}

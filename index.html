@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  </head>
+
+  <body >
+
+    <nav class="navbar navbar-primary">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <span class="navbar-brand" >
+            G
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Line Chart Section -->
+      <div class="row">
+        <img src="images/loader.gif" id="loader1" style="margin-left: 50%;">
+        <div class="col-md-12" id="chartDiv">
+          <div id="curve_chart" class="chart"></div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <!-- Table Section -->
+      <div class="row ranksHeading">
+        <h5>Ranks</h5>
+      </div>
+      <br>
+      <div class="row">
+        <img src="images/loader.gif" id="loader2" style="margin-left: 50%;">
+        <div class="col-md-12" id="tableDiv">
+          <table id="rankTable" class="table-striped">
+            <thead>
+              <tr>
+                <th>Keyword</th>
+                <th>Position</th>
+                <th>Change</th>
+              </tr>
+            </thead>
+            
+            <tbody>  
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>    
+    <script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/assignment.js"></script>
+
+    <script type="text/javascript">
+
+      var rankTable;
+
+      $(document).ready(function() {
+
+          rankTable = $('#rankTable').DataTable({ 
+                            "lengthMenu": [ 25, 50, 75, 100 ],
+                      });
+
+          loadTableData();
+          loadChartData();
+
+      });
+
+    </script>
+
+
+  </body>
+  </html>
